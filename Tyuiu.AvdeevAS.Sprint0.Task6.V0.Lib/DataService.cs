@@ -7,10 +7,11 @@ namespace Tyuiu.AvdeevAS.Sprint0.Task6.V0.Lib
         public static object AdditionArray(int[] numbers)
         {
             var total = 0;
+
             for (int i = 0; i < numbers.Length; i++)
             {
 
-                total += total + numbers[i];
+                total += numbers[i];
             }
             return total;
         }
@@ -22,7 +23,7 @@ namespace Tyuiu.AvdeevAS.Sprint0.Task6.V0.Lib
 
             while (index < numbers.Length)
             {
-                total += total + numbers[index];
+                total -= numbers[index];
                 index++;
             }
             return total;
@@ -31,15 +32,16 @@ namespace Tyuiu.AvdeevAS.Sprint0.Task6.V0.Lib
         public static object MultiplicationArray(int[] numbers)
         {
 
-            var total = 0;
+            var total = 1;
             int index = 0;
 
             do
             {
-                total += total + numbers[index];
+                total *= numbers[index];
                 index++;
             }
             while (index < numbers.Length);
+            
             return total;
         }
         
